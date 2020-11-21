@@ -1,0 +1,250 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1, h3 {
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #7257E2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #7257E2;
+    color: #FFF;
+    padding: 1px 0;
+    margin-bottom: 10px;
+}
+
+.header-info {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.top-container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 15px;
+}
+
+.top-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.top-container .assured {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #7257E2;
+}
+
+.top-container a {
+    font-size: 1.1rem;
+}
+
+.top-container .big {
+    font-size: 1.5rem;
+}
+
+.bottom-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.state {
+	display: block;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	border-radius: .5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+	  linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+}
+.state::-ms-expand {
+	display: none;
+}
+.state:hover {
+	border-color: #888;
+}
+.state:focus {
+	border-color: #7257E2;
+	box-shadow: 0 0 1px 3px #7257E2;
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #222;
+	outline: none;
+}
+.state option {
+	font-weight:normal;
+}
+
+.steps-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.steps {
+    display: flex;
+}
+
+.step {
+    width: 35%;
+    padding: 10px;
+}
+
+.step span {
+    color: #7257E2;
+    font-weight: 900;
+}
+
+.step p {
+    color: #aaa;
+}
+
+#step2 {
+    margin-top: 50px;
+}
+
+#step3 {
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #7257E2;
+    color: #FFF;
+}
+
+.footer-content {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 0 10px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-links a, .socials a, .end-note a {
+    padding: 10px;
+    color: #FFF;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials p, .end-note p {
+    color: #aaa;
+}
+
+.end-note {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    border-top: 1px solid #FFF;
+}
+
+@media screen and (max-width: 900px) {
+    .top-container .assured {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .top-container {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .socials {
+        margin-bottom: 10px;
+    }
+    .end-note {
+        display: block;
+        text-align: center;
+    }
+
+    .end-note p {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    img {
+        height: initial;
+    }
+
+    .steps {
+        display: block;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    #step2, #step3 {
+        margin: 0;
+    }
+
+    .footer-links a, .socials, .socials a {
+        display: block;
+        text-align: center;
+    }
+}
